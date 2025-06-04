@@ -1,15 +1,16 @@
 
-from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, render_template, request, redirect, flash, url_for
+from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
-import pickle
-import numpy as np
-import warnings
-from sklearn.exceptions import DataConversionWarning
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, SelectField, IntegerField
 from wtforms.validators import InputRequired, Length, ValidationError, DataRequired
 from flask_bcrypt import Bcrypt
+
+import pickle
+import numpy as np
+import warnings
+from sklearn.exceptions import DataConversionWarning
 
 
 
